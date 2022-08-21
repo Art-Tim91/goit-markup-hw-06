@@ -480,6 +480,7 @@
         <div>
           <p class="connect-textarea">Подпишитесь на рассылку</p>
           <form class="in-btn-cont">
+            <label for="follow-email"></label>
             <input
               class="footer-input"
               type="email"
@@ -526,73 +527,77 @@
                     <use href="./images/symbol-defs.svg#icon-person"></use>
                   </svg>
                 </span>
-              </li>
-              <li class="data-item">
-                <label for="tel">
-                  <span class="label-title">Телефон</span>
-                  <span class="input-wrap">
-                    <input
-                      class="form-input"
-                      type="tel"
-                      id="tel"
-                      name="tel"
-                      placeholder="+380671112233"
-                      required
-                      pattern="[\+]\d{12}"
-                    />
-                    <svg class="input-icon" width="18" height="18">
-                      <use href="./images/symbol-defs.svg#icon-phone"></use>
-                    </svg>
-                  </span>
-                </li>
-                <li class="data-item">
-                  <label for="email">
-                    <span class="label-title">Почта</span>
-                    <span class="input-wrap">
-                      <input
-                        class="form-input"
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="xxx@mail.com"
-                      />
-                      <svg class="input-icon" width="18" height="18">
-                        <use href="./images/symbol-defs.svg#icon-email"></use>
-                      </svg>
-                    </span>
-                  </li>
-                  <li class="textarea-item">
-                    <label class="label-title" for="text">Комментарий</label>
-                    <textarea class="textarea-input" 
-                    id="text"
-                    name="text"
-                    placeholder="Введите текст"></textarea>
-                    </li>
-                </ul>
-                <div class="checkbox-container">
+              </label>
+            </li>
+            <li class="data-item">
+              <label for="tel">
+                <span class="label-title">Телефон</span>
+                <span class="input-wrap">
                   <input
-                  class="checkbox-input"
-                        type="checkbox"
-                        id="checkbox"
-                        name="checkbox"
-                        value="yes"
-                        required
+                    class="form-input"
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    placeholder="+380671112233"
+                    required
+                    pattern="[\+]\d{12}"
                   />
-                  <label class="check-label" for="checkbox">
-                    <span class="check-quad">
-                      <svg class="check-icon" width="16" height="15">
-                        <use href="./images/symbol-defs.svg#icon-check"></use>
-                      </svg>
-                    </span>Соглашаюсь с рассылкой и принимаю
-                      <a class="link-check" href="#">Условия договора</a>
-                    
-                  </label>
-                </div>
+                  <svg class="input-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="data-item">
+              <label for="email">
+                <span class="label-title">Почта</span>
+                <span class="input-wrap">
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="xxx@mail.com"
+                  />
+                  <svg class="input-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-email"></use>
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="textarea-item">
+              <label class="label-title" for="text">Комментарий</label>
+              <textarea
+                class="textarea-input"
+                id="text"
+                name="text"
+                placeholder="Введите текст"
+              ></textarea>
+            </li>
+          </ul>
+          <div class="checkbox-container">
+            <input
+              class="checkbox-input"
+              type="checkbox"
+              id="checkbox"
+              name="checkbox"
+              value="yes"
+              required
+            />
+            <label class="check-label" for="checkbox">
+              <span class="check-quad">
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg> </span
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="link-check" href="#">Условия договора</a>
+            </label>
+          </div>
           <button class="submit-btm" type="submit">Отправить</button>
         </form>
       </div>
     </div>
-    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
